@@ -1,6 +1,6 @@
 import { Given, Then, And } from 'cypress-cucumber-preprocessor/steps';
 
-/* RAM Login internal */
+/* RAM Login internal normal */
 Given('I am logged in RAM', () => {
   cy.loginAppRAM();
 });
