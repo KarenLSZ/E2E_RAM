@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-30T21:28:56.350Z",
+    "end": "2021-09-30T21:29:21.436Z",
+    "duration": 25086,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f2ea0a3a-4552-4dac-90c0-f2837ba6c446",
+      "title": "",
+      "fullFile": "cypress/integration/Create request in RAM/Customer_number_event_subscriber.feature",
+      "file": "cypress/integration/Create request in RAM/Customer_number_event_subscriber.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2fac8782-10a2-44a9-ba58-41a7db6d085f",
+          "title": "Request Customer number event subscriber to RAM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create Customer number event subscriber request in RAM",
+              "fullTitle": "Request Customer number event subscriber to RAM Create Customer number event subscriber request in RAM",
+              "timedOut": null,
+              "duration": 22827,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 18000ms: Expected to find element: `#username`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 18000ms: Expected to find element: `#username`, but never found it.\n    at ssoLoginRAM (https://wwwstage.ibm.com/__cypress/tests?p=cypress/support/index.js:146:6)\n    at Context.eval (https://wwwstage.ibm.com/__cypress/tests?p=cypress/support/index.js:122:3)",
+                "diff": null
+              },
+              "uuid": "b5398ff6-d463-4d38-96f9-8af186f7406d",
+              "parentUUID": "2fac8782-10a2-44a9-ba58-41a7db6d085f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b5398ff6-d463-4d38-96f9-8af186f7406d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 22827,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

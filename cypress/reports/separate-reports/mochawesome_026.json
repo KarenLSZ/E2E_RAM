@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-12T20:19:27.742Z",
+    "end": "2021-10-12T20:20:04.604Z",
+    "duration": 36862,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "03deb306-5129-4d2d-b5dd-135346bde65c",
+      "title": "",
+      "fullFile": "cypress/integration/Create request in RAM/Internal/User_delete_administrator.feature",
+      "file": "cypress/integration/Create request in RAM/Internal/User_delete_administrator.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "251c26d7-5e45-42a3-af02-dc56b0f6c401",
+          "title": "Request User delete administrator to RAM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create User delete administrator request in RAM",
+              "fullTitle": "Request User delete administrator to RAM Create User delete administrator request in RAM",
+              "timedOut": null,
+              "duration": 34187,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 18000ms: Expected to find element: `li[title=\"User delete administrator\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 18000ms: Expected to find element: `li[title=\"User delete administrator\"]`, but never found it.\n    at Context.eval (https://wwwstage.ibm.com/__cypress/tests?p=cypress/integration/Create%20request%20in%20RAM/Internal/User_delete_administrator.feature:161:6)\n    at Context.resolveAndRunStepDefinition (https://wwwstage.ibm.com/__cypress/tests?p=cypress/integration/Create%20request%20in%20RAM/Internal/User_delete_administrator.feature:10645:29)\n    at Context.eval (https://wwwstage.ibm.com/__cypress/tests?p=cypress/integration/Create%20request%20in%20RAM/Internal/User_delete_administrator.feature:9966:35)",
+                "diff": null
+              },
+              "uuid": "6eb210bc-9f1e-48fb-b199-2c5904092de3",
+              "parentUUID": "251c26d7-5e45-42a3-af02-dc56b0f6c401",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6eb210bc-9f1e-48fb-b199-2c5904092de3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 34187,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

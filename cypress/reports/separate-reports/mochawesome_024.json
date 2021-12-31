@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-12T20:18:14.168Z",
+    "end": "2021-10-12T20:18:42.549Z",
+    "duration": 28381,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1e560830-3bb7-4e7d-b02e-1229f577b0ef",
+      "title": "",
+      "fullFile": "cypress/integration/Create request in RAM/Internal/IBM_order_support.feature",
+      "file": "cypress/integration/Create request in RAM/Internal/IBM_order_support.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a2a643ba-0f3e-4779-b3f6-e39fd66b8c41",
+          "title": "Request IBM order support to RAM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create IBM order support request in RAM",
+              "fullTitle": "Request IBM order support to RAM Create IBM order support request in RAM",
+              "timedOut": null,
+              "duration": 25587,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: I click submit the request",
+                "estack": "Error: Step implementation missing for: I click submit the request\n    at Context.resolveAndRunStepDefinition (https://wwwstage.ibm.com/__cypress/tests?p=cypress/integration/Create%20request%20in%20RAM/Internal/IBM_order_support.feature:10651:11)\n    at Context.eval (https://wwwstage.ibm.com/__cypress/tests?p=cypress/integration/Create%20request%20in%20RAM/Internal/IBM_order_support.feature:9966:35)",
+                "diff": null
+              },
+              "uuid": "2890f9d0-96d2-4d73-8d95-c14e7f7d4576",
+              "parentUUID": "a2a643ba-0f3e-4779-b3f6-e39fd66b8c41",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2890f9d0-96d2-4d73-8d95-c14e7f7d4576"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 25587,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

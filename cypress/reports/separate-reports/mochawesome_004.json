@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-30T21:29:24.308Z",
+    "end": "2021-09-30T21:29:49.843Z",
+    "duration": 25535,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "25d0ac15-db7d-46e2-b9d2-a30cfb1f9750",
+      "title": "",
+      "fullFile": "cypress/integration/Create request in RAM/IBM_ notice_administrator.feature",
+      "file": "cypress/integration/Create request in RAM/IBM_ notice_administrator.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8e006fd2-4456-41d7-97e9-d493a6dbe2cc",
+          "title": "Request IBM notice administrator to RAM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create IBM notice administrator request in RAM",
+              "fullTitle": "Request IBM notice administrator to RAM Create IBM notice administrator request in RAM",
+              "timedOut": null,
+              "duration": 23221,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 18000ms: Expected to find element: `#username`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 18000ms: Expected to find element: `#username`, but never found it.\n    at ssoLoginRAM (https://wwwstage.ibm.com/__cypress/tests?p=cypress/support/index.js:146:6)\n    at Context.eval (https://wwwstage.ibm.com/__cypress/tests?p=cypress/support/index.js:122:3)",
+                "diff": null
+              },
+              "uuid": "0bddf949-68f9-4fc4-b9d8-624cad519aff",
+              "parentUUID": "8e006fd2-4456-41d7-97e9-d493a6dbe2cc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0bddf949-68f9-4fc4-b9d8-624cad519aff"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 23221,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

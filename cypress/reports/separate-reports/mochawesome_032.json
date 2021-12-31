@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-12T20:21:30.176Z",
+    "end": "2021-10-12T20:21:31.774Z",
+    "duration": 1598,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6e1082e0-d781-46d7-844d-c99d66d4afb9",
+      "title": "",
+      "fullFile": "cypress/integration/Login/Login.feature",
+      "file": "cypress/integration/Login/Login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "00030f2e-9834-4476-b2bd-df3cfa123d84",
+          "title": "Login to Shopz",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to Shopz",
+              "fullTitle": "Login to Shopz Login to Shopz",
+              "timedOut": null,
+              "duration": 1551,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://wwwstage.ibm.com/software/shopzseries/ShopzSeries_public.wss\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://wwwstage.ibm.com/software/shopzseries/ShopzSeries_public.wss\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://localhost:57176/__cypress/runner/cypress_runner.js:156039:84\n    at visitFailedByErr (http://localhost:57176/__cypress/runner/cypress_runner.js:155414:12)\n    at http://localhost:57176/__cypress/runner/cypress_runner.js:156019:13\n    at tryCatcher (http://localhost:57176/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57176/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (http://localhost:57176/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (http://localhost:57176/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (http://localhost:57176/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (http://localhost:57176/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (http://localhost:57176/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57176/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (http://localhost:57176/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at ssoLogin (http://localhost:57176/__cypress/tests?p=cypress/support/index.js:79:6)\n    at Context.eval (http://localhost:57176/__cypress/tests?p=cypress/support/index.js:58:3)",
+                "diff": null
+              },
+              "uuid": "19ac0972-c769-40a0-98a2-a291918e4c5f",
+              "parentUUID": "00030f2e-9834-4476-b2bd-df3cfa123d84",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "19ac0972-c769-40a0-98a2-a291918e4c5f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1551,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

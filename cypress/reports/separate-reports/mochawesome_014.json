@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-30T21:34:09.470Z",
+    "end": "2021-09-30T21:34:59.647Z",
+    "duration": 50177,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "58e41685-fd1f-4906-9524-0ca75eaac3bd",
+      "title": "",
+      "fullFile": "cypress/integration/Login/Login.feature",
+      "file": "cypress/integration/Login/Login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "14a17bc6-debe-467c-bd07-904df6e5b613",
+          "title": "Login to Shopz",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to Shopz",
+              "fullTitle": "Login to Shopz Login to Shopz",
+              "timedOut": null,
+              "duration": 46663,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 18000ms: Expected to find element: `#username`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 18000ms: Expected to find element: `#username`, but never found it.\n    at ssoLogin (https://wwwstage.ibm.com/__cypress/tests?p=cypress/support/index.js:80:6)\n    at Context.eval (https://wwwstage.ibm.com/__cypress/tests?p=cypress/support/index.js:56:3)",
+                "diff": null
+              },
+              "uuid": "8bb1a3b7-0a09-42d3-815a-6c42c4256866",
+              "parentUUID": "14a17bc6-debe-467c-bd07-904df6e5b613",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8bb1a3b7-0a09-42d3-815a-6c42c4256866"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 46663,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

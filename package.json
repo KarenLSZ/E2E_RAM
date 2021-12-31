@@ -1,0 +1,42 @@
+{
+  "name": "e2e-cypress",
+  "version": "1.0.0",
+  "description": "Pruebas automatizadas con Cypress en RAM",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "e2e": "cypress open",
+    "lint": "eslint ./cypress",
+    "lint:fix": "eslint ./cypress --fix",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "Cypress",
+    "Automation",
+    "E2E",
+    "RAM"
+  ],
+  "author": "Karen Lizbeth Sanchez Zuñiga",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cypress": "^9.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.0",
+    "husky": "^7.0.2"
+  },
+  "dependencies": {
+    "authenticator": "^1.1.5",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "dotenv": "8.2.0",
+    "mocha": "^8.3.2",
+    "mochawesome": "4.1.0",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "4.0.1"
+  }
+}
